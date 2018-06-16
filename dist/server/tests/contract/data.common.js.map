@@ -1,0 +1,1 @@
+{"version":3,"sources":["server/tests/contract/data.common.js"],"names":["token","valid","invalid","testing","testingKey"],"mappings":";;;;;;AAAA;;;;;;AAEA,IAAMA,QAAQ;AACZC,SAAO,6KADK;AAEZC,WAAS,6LAFG;AAGZC,WAAS,iBAAOC;AAHJ,CAAd;;kBAMe,EAAEJ,YAAF,E","file":"data.common.js","sourceRoot":"../../../../../../.."}
