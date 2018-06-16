@@ -22,7 +22,7 @@ var envVarsSchema = _joi2.default.object({
     then: _joi2.default.boolean().default(true),
     otherwise: _joi2.default.boolean().default(false)
   }),
-  MONGO_HOST: _joi2.default.string().required().description('Mongo DB host url'),
+  MONGO_HOST_HOWL: _joi2.default.string().required().description('Mongo DB host url'),
   MONGO_PORT: _joi2.default.number().default(27017)
 }).unknown().required();
 
@@ -40,7 +40,7 @@ var config = {
   mongooseDebug: envVars.MONGOOSE_DEBUG,
   testingKey: envVars.TESTING_KEY,
   mongo: {
-    host: envVars.MONGO_HOST,
+    host: envVars.MONGO_HOST_HOWL,
     port: envVars.MONGO_PORT
   }
 };
