@@ -13,17 +13,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var authenticate = function authenticate(req, res, next) {
   var username = req.header('Authorisation');
+  return next();
 
-  return !global.userID ? _user2.default.findByUsername(username).then(function (user) {
-    if (!user) {
-      return res.status(401).send();
-    }
+  // return !global.userID
+  //   ? User.findByUsername(username)
+  //     .then((user) => {
+  //       if (!user) {
+  //         return res.status(401).send();
+  //       }
 
-    req.user = user;
-    return next();
-  }).catch(function () {
-    return res.status(401).send();
-  }) : next();
+  //       req.user = user;
+  //       return next();
+  //     })
+  //     .catch(() => res.status(401).send())
+  //   : next();
 };
 
 exports.default = authenticate;
