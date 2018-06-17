@@ -2,7 +2,7 @@ function get(req, res) {
   const content = [
     {
       id: 21,
-      content: 'Has anyone saw my laptop in Murphs Pub?',
+      content: 'Has anyone seen my laptop in Murphy\'s Pub? I left it there last night :(',
       votes: {
         total: 32,
         is: {
@@ -18,7 +18,7 @@ function get(req, res) {
     },
     {
       id: 20,
-      content: 'Is there some dangerous streets in this area?',
+      content: 'Are there any dangerous streets in this area?',
       votes: {
         total: 27,
         is: {
@@ -34,7 +34,7 @@ function get(req, res) {
     },
     {
       id: 19,
-      content: 'Where I find the chepeast beer in this area?',
+      content: 'Where can I find the chepeast beer in this area?',
       votes: {
         total: 23,
         is: {
@@ -47,6 +47,54 @@ function get(req, res) {
         friendly: '9 days ago'
       },
       author: 'rxluz'
+    },
+    {
+      id: 18,
+      content: 'Does anyone know a good route to Temple bar for me, I use a wheelchair',
+      votes: {
+        total: 15,
+        is: {
+          up: false,
+          down: false
+        }
+      },
+      date: {
+        timestamp: 1529222392,
+        friendly: '3 hours ago'
+      },
+      author: 'dan'
+    },
+    {
+      id: 17,
+      content: 'Hi guys, I really need an iPhone charger, anyone around have one?',
+      votes: {
+        total: 9,
+        is: {
+          up: false,
+          down: false
+        }
+      },
+      date: {
+        timestamp: 1529222392,
+        friendly: '5 minutes ago'
+      },
+      author: 'lola'
+    },
+    {
+      id: 17,
+      content: 'Steer clear off Canden street? A bus has just hit a car so it is closed!',
+      votes: {
+        total: 3,
+        is: {
+          up: false,
+          down: false
+        }
+      },
+      date: {
+        timestamp: 1529222392,
+        friendly: '18 minutes ago'
+      },
+      author: 'lola'
     },
   ];
   return res.json({ total: content.length, data: content });
