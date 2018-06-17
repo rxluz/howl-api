@@ -281,8 +281,19 @@ function post(req, res) {
   const contentInt = {
     id: 90, 
     content: req.body.content,
-    timer: req.body.timer,
-    price: req.body.price
+    votes: {
+      total: 0,
+      is: {
+        up: false,
+        down: false
+      }
+    },
+    date: {
+      timestamp: 1529222592,
+      friendly: '0 minute ago'
+    },
+    author: 'dan'
+
   };
 
   content.unshift(contentInt);
