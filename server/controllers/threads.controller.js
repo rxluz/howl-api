@@ -4,7 +4,25 @@ function get(req, res) {
   const content = [
     {
       id: 21,
+      content: 'Hi, I am looking for a local guide for the day, anyone around?',
+      price: "$ 30",
+      votes: {
+        total: 32,
+        is: {
+          up: false,
+          down: true
+        }
+      },
+      date: {
+        timestamp: 1529222592,
+        friendly: '13 minutes ago'
+      },
+      author: 'dan'
+    },
+    {
+      id: 21,
       content: 'Has anyone seen my laptop in Murphy\'s Pub? I left it there last night :(',
+      price: "",
       votes: {
         total: 32,
         is: {
@@ -21,6 +39,7 @@ function get(req, res) {
     {
       id: 20,
       content: 'Are there any dangerous streets in this area?',
+      price: "",
       votes: {
         total: 27,
         is: {
@@ -37,6 +56,7 @@ function get(req, res) {
     {
       id: 19,
       content: 'Anyone want meet up for random beers?',
+      price: "",
       votes: {
         total: 23,
         is: {
@@ -53,6 +73,7 @@ function get(req, res) {
     {
       id: 18,
       content: 'Does anyone know a good route to Temple bar for me, I use a wheelchair',
+      price: "",
       votes: {
         total: 15,
         is: {
@@ -69,6 +90,7 @@ function get(req, res) {
     {
       id: 17,
       content: 'Hi guys, I really need an iPhone charger, anyone around have one?',
+      price: "",
       votes: {
         total: 9,
         is: {
@@ -85,6 +107,7 @@ function get(req, res) {
     {
       id: 17,
       content: 'Steer clear off Canden street? A bus has just hit a car so it is closed!',
+      price: "",
       votes: {
         total: 3,
         is: {
@@ -183,7 +206,25 @@ function post(req, res) {
   const content = [
     {
       id: 21,
+      content: 'Hi, I am looking for a local guide for the day, anyone around?',
+      price: "$ 30",
+      votes: {
+        total: 32,
+        is: {
+          up: false,
+          down: true
+        }
+      },
+      date: {
+        timestamp: 1529222592,
+        friendly: '13 minutes ago'
+      },
+      author: 'dan'
+    },
+    {
+      id: 21,
       content: 'Has anyone seen my laptop in Murphy\'s Pub? I left it there last night :(',
+      price: "",
       votes: {
         total: 32,
         is: {
@@ -200,6 +241,7 @@ function post(req, res) {
     {
       id: 20,
       content: 'Are there any dangerous streets in this area?',
+      price: "",
       votes: {
         total: 27,
         is: {
@@ -216,6 +258,7 @@ function post(req, res) {
     {
       id: 19,
       content: 'Anyone want meet up for random beers?',
+      price: "",
       votes: {
         total: 23,
         is: {
@@ -232,6 +275,7 @@ function post(req, res) {
     {
       id: 18,
       content: 'Does anyone know a good route to Temple bar for me, I use a wheelchair',
+      price: "",
       votes: {
         total: 15,
         is: {
@@ -248,6 +292,7 @@ function post(req, res) {
     {
       id: 17,
       content: 'Hi guys, I really need an iPhone charger, anyone around have one?',
+      price: "",
       votes: {
         total: 9,
         is: {
@@ -264,6 +309,7 @@ function post(req, res) {
     {
       id: 17,
       content: 'Steer clear off Canden street? A bus has just hit a car so it is closed!',
+      price: "",
       votes: {
         total: 3,
         is: {
@@ -278,9 +324,11 @@ function post(req, res) {
       author: 'lola'
     },
   ];
+
   const contentInt = {
     id: 90, 
     content: req.body.content,
+    price: "",
     votes: {
       total: 0,
       is: {
